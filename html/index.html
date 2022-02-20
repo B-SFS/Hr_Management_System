@@ -1,16 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/style.css" rel="stylesheet">
-    <title>Accounting System</title>
-    <link href="../img/manage.png" rel="icon">
+    <title>HR Management System</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <section class="navbar">
-        <head>
+        <header>
             <nav>
                 <div><img src="../img/manage.png" alt=""></div>
                 <div><h1>HR-Managment-System</h1></div>
@@ -18,23 +20,50 @@
                 <div class="about"><a href="./accounting.html">Accounting</a></div>
                 <div style="position: absolute; right:3%;font-size: 25px; color: white;"><i class="fas fa-list"></i></div>
             </nav>
-        </head>
+        </header>
         </section>
-        <main>
-            <!-- <select id = "level" >
-                <option value="Senior">Senior</option>
-                <option value="Mid-Senior">Mid-Senior</option>
-                <option value="Junior">Junior</option>
-            </select> -->
-        </main>
-        <secion class="footer">
-            <footer>
-            <div class="copy">&copy; All Rights Reserved To Suhaib Silwadi</div>
-            <div class="face"><a  href="https://web.facebook.com/suhaib.silwadi.50" target="_blank"><i class="fab fa-facebook"></i></a></div>
-            <div class="insta"><a style =" right: 80px;"  href="https://www.instagram.com/suhaibsilwadi/" target="_blank"><i class="fab fa-instagram"></i></a></div>
-            </footer>
-        </secion>
-        <script src="https://kit.fontawesome.com/389026cb84.js" crossorigin="anonymous"></script>
-        <script src="../js/app.js"></script>
+
+    <main>
+        <button id="add-btn">Add New Employee</button>
+        <form id="new-emp-form">
+            <fieldset>
+                <label for="name">Full name</label>
+                <input type="text" id="name" required>
+
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="Administration">Administration</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Development">Development</option>
+                    <option value="Finance">Finance</option>
+                </select>
+
+                <label for="level">Level</label>
+                <select id="level" name="level" required>
+                    <option value="Junior">Junior</option>
+                    <option value="Mid-Senior">Mid-Senior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+
+                <label for="image">Image URL</label>
+                <input type="text" name="image" id="image">
+
+                <button type="submit" id="submit-btn">Add</button>
+            </fieldset>
+        </form>
+        
+        <section id="members-container"></section>
+    </main>
+
+
+    <secion class="footer">
+        <footer>
+        <div class="copy">&copy; All Rights Reserved To Suhaib Silwadi</div>
+        <div class="face"><a  href="https://web.facebook.com/suhaib.silwadi.50" target="_blank"><i class="fab fa-facebook"></i></a></div>
+        <div class="insta"><a style =" right: 80px;"  href="https://www.instagram.com/suhaibsilwadi/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+        </footer>
+    </secion>
+    <script src="../js/app.js"></script>
 </body>
+
 </html>
